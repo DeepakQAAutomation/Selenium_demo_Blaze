@@ -1,0 +1,4 @@
+base\BaseTest.class
+pages\ProductListingPage.class
+pages\AddToCartPage.class
+pages\HomePage.class

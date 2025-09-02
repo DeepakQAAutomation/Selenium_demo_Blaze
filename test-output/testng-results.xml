@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-02T08:11:33 IST" name="Suite" finished-at="2025-09-02T08:12:25 IST" duration-ms="51833">
+    <groups>
+      <group name="Master">
+        <method signature="Cart.AddToCart()[pri:0, instance:testCases.Cart@385c9627]" name="AddToCart" class="testCases.Cart"/>
+        <method signature="ClickItems.TestProduct()[pri:0, instance:testCases.ClickItems@6989da5e]" name="TestProduct" class="testCases.ClickItems"/>
+      </group> <!-- Master -->
+      <group name="Sanity">
+        <method signature="Cart.AddToCart()[pri:0, instance:testCases.Cart@385c9627]" name="AddToCart" class="testCases.Cart"/>
+        <method signature="ClickItems.TestProduct()[pri:0, instance:testCases.ClickItems@6989da5e]" name="TestProduct" class="testCases.ClickItems"/>
+        <method signature="TestLogin.Login()[pri:0, instance:testCases.TestLogin@1bb5a082]" name="Login" class="testCases.TestLogin"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="Cart.AddToCart()[pri:0, instance:testCases.Cart@385c9627]" name="AddToCart" class="testCases.Cart"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="TestLogin.Login()[pri:0, instance:testCases.TestLogin@1bb5a082]" name="Login" class="testCases.TestLogin"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2025-09-02T08:11:33 IST" name="Test" finished-at="2025-09-02T08:12:25 IST" duration-ms="51833">
+      <class name="testCases.ClickItems">
+        <test-method is-config="true" signature="SetUpBrowser()[pri:0, instance:testCases.ClickItems@6989da5e]" started-at="2025-09-02T08:11:43 IST" name="SetUpBrowser" finished-at="2025-09-02T08:11:51 IST" duration-ms="7824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpBrowser -->
+        <test-method signature="TestProduct()[pri:0, instance:testCases.ClickItems@6989da5e]" started-at="2025-09-02T08:11:51 IST" name="TestProduct" finished-at="2025-09-02T08:12:03 IST" duration-ms="12029" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='card-block']//a[contains(text(),'Nokia lumia 1520')]"}
+  (Session info: chrome=139.0.7258.155)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b04a768f2fbb61e942b93fab289a382a, findElement {value=//div[@class='card-block']//a[contains(text(),'Nokia lumia 1520')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\deepa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62164}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62164/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b04a768f2fbb61e942b93fab289a382a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='card-block']//a[contains(text(),'Nokia lumia 1520')]"}
+  (Session info: chrome=139.0.7258.155)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b04a768f2fbb61e942b93fab289a382a, findElement {value=//div[@class='card-block']//a[contains(text(),'Nokia lumia 1520')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\deepa\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62164}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62164/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b04a768f2fbb61e942b93fab289a382a
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at pages.ProductListingPage.ClickONItems(ProductListingPage.java:26)
+at testCases.ClickItems.TestProduct(ClickItems.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestProduct -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:testCases.ClickItems@6989da5e]" started-at="2025-09-02T08:12:03 IST" name="TearDown" finished-at="2025-09-02T08:12:03 IST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- testCases.ClickItems -->
+      <class name="testCases.TestLogin">
+        <test-method is-config="true" signature="SetUpBrowser()[pri:0, instance:testCases.TestLogin@1bb5a082]" started-at="2025-09-02T08:11:33 IST" name="SetUpBrowser" finished-at="2025-09-02T08:11:42 IST" duration-ms="9180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpBrowser -->
+        <test-method signature="Login()[pri:0, instance:testCases.TestLogin@1bb5a082]" started-at="2025-09-02T08:11:42 IST" name="Login" finished-at="2025-09-02T08:11:43 IST" duration-ms="574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:testCases.TestLogin@1bb5a082]" started-at="2025-09-02T08:11:43 IST" name="TearDown" finished-at="2025-09-02T08:11:43 IST" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- testCases.TestLogin -->
+      <class name="testCases.Cart">
+        <test-method is-config="true" signature="SetUpBrowser()[pri:0, instance:testCases.Cart@385c9627]" started-at="2025-09-02T08:12:03 IST" name="SetUpBrowser" finished-at="2025-09-02T08:12:11 IST" duration-ms="7922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUpBrowser -->
+        <test-method signature="AddToCart()[pri:0, instance:testCases.Cart@385c9627]" started-at="2025-09-02T08:12:11 IST" name="AddToCart" finished-at="2025-09-02T08:12:25 IST" duration-ms="13313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCart -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:testCases.Cart@385c9627]" started-at="2025-09-02T08:12:25 IST" name="TearDown" finished-at="2025-09-02T08:12:25 IST" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- testCases.Cart -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
